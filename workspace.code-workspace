@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+  ],
+  "settings": {
+    "markdown.marp.themes": [
+      "./docs/css/structure.css",
+      "./docs/css/simple.css",
+      "./docs/css/kyoai.css",
+      "./docs/css/class.css",
+    ],
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/docs/css"
+      }
+    ],
+  }
+}

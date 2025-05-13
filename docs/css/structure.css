@@ -1,0 +1,149 @@
+/* @theme structure */
+@import-theme 'default';
+:root {
+  --main-color: #444;
+  --background-color: #fdfdfd;
+  --text-color: #555;
+  --h1-color: #444;
+  --h1-border-color: #aaa;
+  --h2to6-color: #555;
+  --h2to6-border-color: var(--background-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+:root h1 {
+  color: var(--h1-color);
+}
+
+:root h1 strong {
+  color: var(--main-color);
+}
+
+:root h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--h2to6-color);
+}
+
+:root figcaption {
+  font-size: 0.5em;
+  color: #aaa;
+}
+
+:root figcaption a {
+  color: #aaa;
+}
+
+/* title class: first slide in a section. Use h1 as header.
+Use: <!-- _class: title --> */
+section.title {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 40px;
+  line-height: 1.8em;
+}
+
+section.title h1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.5em;
+  padding: 0.1em;
+  margin: 0.4em 0;
+}
+
+section.title:after {
+  display: none;
+}
+
+/* lead class: first slide in a section. Use h1 as header.
+Use: <!-- _class: lead --> */
+section.lead {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+  font-size: 500%;
+  padding-top: auto;
+}
+
+.triangle_bottom {
+  margin: auto auto;
+  width: 0;
+  height: 0;
+  border: 30px solid transparent;
+  border-width: 50px 50px 0 50px;
+  border-top: 40px solid #aaa;
+}
+
+.triangle_left {
+  margin: 100px auto;
+  width: 0;
+  height: 0;
+  border: 30px solid transparent;
+  border-width: 50px 50px 50px 0;
+  border-left: 40px solid #aaa;
+}
+
+/* hide header, footer and pagination */
+section.lead footer,
+section.lead header,
+section.lead:after {
+  display: none;
+}
+
+/* Add "Page" prefix and total page number */
+section::after {
+  color: #ddd;
+}
+
+/* note */
+.note.info {
+  background-color: #e3f7df;
+}
+
+.note.warn {
+  background-color: #fdf9e2;
+}
+
+.note.alert {
+  background-color: #feebee;
+}
+
+.note {
+  padding: 0px 16px 0px 16px;
+  margin: -10px 0 16px 0;
+}
+
+/* columns */
+[class="2columns"] {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+[class="3columns"] {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+/* centering image */
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=structure.css.map */

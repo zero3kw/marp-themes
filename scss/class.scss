@@ -1,0 +1,19 @@
+/* @theme class */
+
+@import-theme 'default';
+@import-theme 'structure';
+:root {
+    --main-color: #a35;
+    --background-color: #fdfdfd;
+    --text-color: #555;
+    --h1-color: #545;
+    --h1-border-color: #fdfdfd;
+    --h2to6-color: #555;
+    --h2to6-border-color: var(--background-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+section.title h1 {
+    border-bottom: 1px solid var(--main-color);
+}

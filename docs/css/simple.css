@@ -1,0 +1,11 @@
+/* @theme simple */
+@import-theme 'default';
+@import-theme 'structure';
+:root {
+  --main-color: #f00;
+}
+
+section.title h1 {
+  border-bottom: 20px solid var(--main-color);
+}
+/*# sourceMappingURL=simple.css.map */
